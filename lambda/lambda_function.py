@@ -23,7 +23,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Chat G.P.T. mode activated"
+        speak_output = "博士です。"
 
         session_attr = handler_input.attributes_manager.session_attributes
         session_attr["chat_history"] = []
@@ -54,7 +54,7 @@ class GptQueryIntentHandler(AbstractRequestHandler):
         return (
                 handler_input.response_builder
                     .speak(response)
-                    .ask("Any other questions?")
+                    .ask("他に質問はありますか？")
                     .response
             )
 
@@ -68,7 +68,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         # type: (HandlerInput, Exception) -> Response
         logger.error(exception, exc_info=True)
 
-        speak_output = "Sorry, I had trouble doing what you asked. Please try again."
+        speak_output = "すみません、もう一度質問してください。"
 
         return (
             handler_input.response_builder
@@ -86,7 +86,7 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Leaving Chat G.P.T. mode"
+        speak_output = "博士モードを終了します。"
 
         return (
             handler_input.response_builder
@@ -100,18 +100,17 @@ def generate_gpt_response(chat_history, new_question):
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
-    url = "https://api.openai.com/v1/chat/completions"
-    messages = [{"role": "system", "content": "You are a helpful assistant. Answer in 50 words or less."}]
-    for question, answer in chat_history[-10:]:
+    url = "https://api.perplexity.ai/chat/completions"
+    messages = [{"role": "system", "content": "正確かつ簡潔に日本語で答えてください。"}]
+    for question, answer in chat_history:
         messages.append({"role": "user", "content": question})
         messages.append({"role": "assistant", "content": answer})
     messages.append({"role": "user", "content": new_question})
     
     data = {
-        "model": "gpt-3.5-turbo-0125",
+        "model": "llama-3.1-sonar-small-128k-online",
         "messages": messages,
-        "max_tokens": 300,
-        "temperature": 0.5
+        "max_tokens": 500,
     }
     try:
         response = requests.post(url, headers=headers, data=json.dumps(data))

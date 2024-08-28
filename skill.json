@@ -3,137 +3,74 @@
         "publishingInformation": {
             "locales": {
                 "en-US": {
-                    "name": "chat",
-                    "summary": "ChatGPT in Alexa",
-                    "description": "Alexa skill that uses the OpenAI API to generate responses from the ChatGPT model",
+                    "name": "AI chat",
+                    "summary": "Alexa Dr. Mode",
+                    "description": "Alexa skill to interact with Perplexity.ai model",
                     "examplePhrases": [
-                        "Alexa chat"
+                        "Alexa Dr."
                     ],
                     "keywords": []
                 },
                 "en-GB": {
-                    "name": "chat",
-                    "summary": "ChatGPT in Alexa",
-                    "description": "Alexa skill that uses the OpenAI API to generate responses from the ChatGPT model",
+                    "name": "AI chat",
+                    "summary": "Alexa Dr. Mode",
+                    "description": "Alexa skill to interact with Perplexity.ai model",
                     "examplePhrases": [
-                        "Alexa chat"
+                        "Alexa Dr."
                     ],
                     "keywords": []
                 },
                 "en-CA": {
-                    "name": "chat",
-                    "summary": "ChatGPT in Alexa",
-                    "description": "Alexa skill that uses the OpenAI API to generate responses from the ChatGPT model",
+                    "name": "AI chat",
+                    "summary": "Alexa Dr. Mode",
+                    "description": "Alexa skill to interact with Perplexity.ai model",
                     "examplePhrases": [
-                        "Alexa chat"
+                        "Alexa Dr."
                     ],
                     "keywords": []
                 },
                 "en-IN": {
-                    "name": "chat",
-                    "summary": "ChatGPT in Alexa",
-                    "description": "Alexa skill that uses the OpenAI API to generate responses from the ChatGPT model",
+                    "name": "AI chat",
+                    "summary": "Alexa Dr. Mode",
+                    "description": "Alexa skill to interact with Perplexity.ai model",
                     "examplePhrases": [
-                        "Alexa chat"
+                        "Alexa Dr."
                     ],
                     "keywords": []
                 },
                 "en-AU": {
-                    "name": "chat",
-                    "summary": "ChatGPT in Alexa",
-                    "description": "Alexa skill that uses the OpenAI API to generate responses from the ChatGPT model",
+                    "name": "AI chat",
+                    "summary": "Alexa Dr. Mode",
+                    "description": "Alexa skill to interact with Perplexity.ai model",
                     "examplePhrases": [
-                        "Alexa chat"
+                        "Alexa Dr."
                     ],
                     "keywords": []
                 },
                 "es-ES": {
-                    "name": "chat",
-                    "summary": "ChatGPT en Alexa",
-                    "description": "Skill de Alexa que utiliza la API de OpenAI para generar respuestas desde el modelo ChatGPT",
+                    "name": "AI chat",
+                    "summary": "Alexa Dr. Mode",
+                    "description": "Alexa skill to interact with Perplexity.ai model",
                     "examplePhrases": [
-                        "Alexa chat"
+                        "Alexa Dr."
                     ],
                     "keywords": []
                 },
                 "es-MX": {
-                    "name": "chat",
-                    "summary": "ChatGPT en Alexa",
-                    "description": "Skill de Alexa que utiliza la API de OpenAI para generar respuestas desde el modelo ChatGPT",
+                    "name": "AI chat",
+                    "summary": "Alexa Dr. Mode",
+                    "description": "Alexa skill to interact with Perplexity.ai model",
                     "examplePhrases": [
-                        "Alexa chat"
-                    ],
-                    "keywords": []
-                },
-                "es-US": {
-                    "name": "chat",
-                    "summary": "ChatGPT en Alexa",
-                    "description": "Skill de Alexa que utiliza la API de OpenAI para generar respuestas desde el modelo ChatGPT",
-                    "examplePhrases": [
-                        "Alexa chat"
-                    ],
-                    "keywords": []
-                },
-                "fr-FR": {
-                    "name": "chat",
-                    "summary": "ChatGPT dans Alexa",
-                    "description": "Skill Alexa qui utilise l'API OpenAI pour générer des réponses à partir du modèle ChatGPT",
-                    "examplePhrases": [
-                        "Alexa chat"
-                    ],
-                    "keywords": []
-                },
-                "fr-CA": {
-                    "name": "chat",
-                    "summary": "ChatGPT dans Alexa",
-                    "description": "Skill Alexa qui utilise l'API OpenAI pour générer des réponses à partir du modèle ChatGPT",
-                    "examplePhrases": [
-                        "Alexa chat"
+                        "Alexa Dr."
                     ],
                     "keywords": []
                 },
                 "ja-JP": {
-                    "name": "chat",
-                    "summary": "Alexaの中のChatGPT",
-                    "description": "OpenAI APIを使用してChatGPTモデルからの応答を生成するAlexaスキル",
+                    "name": "AI chat",
+                    "summary": "Alexa博士モード",
+                    "description": "Perplexity.aiモデルと対話するAlexaスキル",
                     "examplePhrases": [
-                        "Alexa chat"
-                    ],
-                    "keywords": []
-                },
-                "de-DE": {
-                    "name": "chat",
-                    "summary": "ChatGPT in Alexa",
-                    "description": "Alexa-Skill, der die OpenAI-API verwendet, um Antworten vom ChatGPT-Modell zu generieren",
-                    "examplePhrases": [
-                        "Alexa chat"
-                    ],
-                    "keywords": []
-                },
-                "it-IT": {
-                    "name": "chat",
-                    "summary": "ChatGPT in Alexa",
-                    "description": "Skill di Alexa che utilizza l'API di OpenAI per generare risposte dal modello ChatGPT",
-                    "examplePhrases": [
-                        "Alexa chat"
-                    ],
-                    "keywords": []
-                },
-                "hi-IN": {
-                    "name": "chat",
-                    "summary": "Alexa में ChatGPT",
-                    "description": "Alexa कौशल जो OpenAI API का उपयोग करके ChatGPT मॉडल से प्रतिक्रियाएं उत्पन्न करता है",
-                    "examplePhrases": [
-                        "Alexa chat"
-                    ],
-                    "keywords": []
-                },
-                "pt-BR": {
-                    "name": "chat",
-                    "summary": "ChatGPT na Alexa",
-                    "description": "Skill Alexa que usa a API da OpenAI para gerar respostas a partir do modelo ChatGPT",
-                    "examplePhrases": [
-                        "Alexa chat"
+                        "アレクサ博士"
                     ],
                     "keywords": []
                 }
