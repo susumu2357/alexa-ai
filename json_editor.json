@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "はかせ",
+            "invocationName": "博士モード",
             "intents": [
                 {
                     "name": "GptQueryIntent",
@@ -22,6 +22,14 @@
                 {
                     "name": "AMAZON.RepeatIntent",
                     "samples": ["もう一度", "もう一度言って"]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
                 },
                 {
                     "name": "AMAZON.StopIntent",

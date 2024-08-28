@@ -101,7 +101,7 @@ def generate_gpt_response(chat_history, new_question):
         "Content-Type": "application/json"
     }
     url = "https://api.perplexity.ai/chat/completions"
-    messages = [{"role": "system", "content": "正確かつ簡潔に日本語で答えてください。"}]
+    messages = [{"role": "system", "content": "正確かつ簡潔に、50語以内で答えてください。"}]
     for question, answer in chat_history:
         messages.append({"role": "user", "content": question})
         messages.append({"role": "assistant", "content": answer})
