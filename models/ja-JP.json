@@ -17,19 +17,15 @@
                 },
                 {
                     "name": "AMAZON.CancelIntent",
-                    "samples": []
+                    "samples": ["ストップ", "止めて"]
                 },
                 {
-                    "name": "AMAZON.HelpIntent",
-                    "samples": []
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": ["もう一度", "もう一度言って"]
                 },
                 {
                     "name": "AMAZON.StopIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.NavigateHomeIntent",
-                    "samples": []
+                    "samples": ["終わり", "バイバイ"]
                 }
             ],
             "types": []
